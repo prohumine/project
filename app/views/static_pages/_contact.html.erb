@@ -1,1 +1,7 @@
-<h1>This is where I will put a form to contact me and maybe a phone number</h1>
+<%= simple_form_for @contact do |f| %>
+
+	<%= f.input :name %>
+	<%= f.input :email, placeholder: 'example@example.com' %>
+	<%= f.input :message %>
+
+<% end %>
