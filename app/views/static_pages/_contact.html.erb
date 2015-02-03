@@ -1,7 +1,19 @@
 <%= simple_form_for @contact do |f| %>
 
-	<%= f.input :name %>
-	<%= f.input :email, placeholder: 'example@example.com' %>
-	<%= f.input :message %>
+  <div class="input-group bottom-margin">
+    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+	  <%= f.input :name, label: false, placeholder: 'Name' %>
+  </div>
 
+  <div class="input-group bottom-margin">
+    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+    <%= f.input :email, label: false, placeholder: 'Email address' %>
+  </div>
+
+  <div class="input-group bottom-margin">
+   <span class="input-group-addon"><i class="fa fa-comment-o fa-fw"></i></span>
+	 <%= f.input :message, label: false, placeholder: 'Message' %>
+	</div>
+
+	<%= f.button :submit, class: "btn btn-success" %>
 <% end %>
