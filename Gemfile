@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 gem 'simple_form'
 gem 'mail_form'
 gem 'font-awesome-rails'
+gem "letter_opener", :group => :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
