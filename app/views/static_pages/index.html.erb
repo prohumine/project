@@ -1,54 +1,51 @@
-<h1 class='nameheader'>Marvin Santizo</h1>
+<!-- <h1 class='nameheader'>Marvin Santizo</h1> -->
 <br>
 <br>
 <div class='container'>
 	<div class='options' 'row'>
 	  <h1 class="col-md-4"><%= link_to 'About', '#about', data: {toggle: 'modal', target: '#about'} %></h1>
-	  <h1 class="col-md-4"><%= link_to 'contact', '#contact', data: {toggle: 'modal', target: '#contact'} %></h1>
-	  <h1 class="col-md-4"><%= link_to 'follow', '#follow', data: {toggle: 'modal', target: '#follow'} %></h1>
+	  <h1 class="col-md-4"><%= link_to 'Contact', '#contact', data: {toggle: 'modal', target: '#contact'} %></h1>
+	  <h1 class="col-md-4"><%= link_to 'Follow', '#follow', data: {toggle: 'modal', target: '#follow'} %></h1>
 	</div>
 </div>
-
+<!-- About modal -->
 <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="about" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title text-center" id="myModalLabel">Marvin Santizo</h3>
-        </div>
-        <div class="modal-body">
-          <%= render partial: 'about' %>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modalbg">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title text-center" id="myModalLabel">Marvin Santizo</h3>
+      </div>
+      <div class="modal-body modalbg">
+        <%= render partial: 'about' %>
       </div>
     </div>
   </div>
 </div>
-
+<!-- Contact modal -->
 <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title text-center" id="myModalLabel">Send me a message</h3>
-        </div>
-        <div class="modal-body">
-          <%= render partial: 'contact' %>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modalbg">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title text-center" id="myModalLabel">Send me a message</h3>
+      </div>
+      <div class="modal-body modalbg">
+        <%= render partial: 'contact' %>
       </div>
     </div>
   </div>
 </div>
-
+<!-- Follow modal -->
 <div class="modal fade" id="follow" tabindex="-1" role="dialog" aria-labelledby="follow" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title text-center" id="myModalLabel">Follow me on any of these places</h3>
-        </div>
-        <div class="modal-body">
-          <%= render partial: 'follow' %>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header modalbg">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title text-center" id="myModalLabel">Follow me on any of these places</h3>
+      </div>
+      <div class="modal-body modalbg text">
+        <%= render partial: 'follow' %>
       </div>
     </div>
   </div>

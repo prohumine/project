@@ -26,6 +26,16 @@
 
 a:link {
 	text-decoration: none;
+	color: #FF7519;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFF75;
+}
+
+a:active {
+	text-decoration: underline;
 }
 
 .nameheader {
@@ -41,6 +51,18 @@ body {
 	background-size: cover;
 }
 
-#facepic {
+#aboutmodal {
 	text-align: center;
+		a:visited {
+			color: #428bca;
+  }
+}
+
+.modalbg {
+	background: url(modalbg.jpeg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.follow {
+	list-style-type: none;
 }
