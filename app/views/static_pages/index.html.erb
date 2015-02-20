@@ -1,4 +1,9 @@
 <!-- <h1 class='nameheader'>Marvin Santizo</h1> -->
+<div class='row' id='flashnotice'>
+  <% if flash[:notice] %>
+    <div class="notice col-md-offset-3"><h3><%= flash[:notice] %></h3></div>
+  <% end %>
+</div>
 <div class='container addtocontainer'>
 	<div class='options row'>
 	  <h1 class="col-md-4"><%= link_to 'About', '#about', data: {toggle: 'modal', target: '#about'} %></h1>
