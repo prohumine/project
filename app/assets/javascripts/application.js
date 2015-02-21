@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
 $(function() {
    $('#flashnotice').delay(500).fadeIn('normal', function() {
       $(this).delay(2500).fadeOut();
