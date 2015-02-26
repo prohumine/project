@@ -6,11 +6,15 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     @contact.request = request
-    if @contact.deliver
-      flash[:notice] = "Thank you for your message I will get back to you soon"
-      redirect_to root_path
-    else
-      render new
+    respond_to do |format|
+      if @contact.deliver
+        format.html
+        format.js {flash[:notice] = "Thank you for your message I will get back to you soon"}
+      else
+        format.js do
+          render js: "alert(#{@contact.errors.full_messages});"
+        end
+      end
     end
   end
 

@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
-  	@contact = Contact.new
+    @contact = Contact.new
   end
 
     def download_resume 

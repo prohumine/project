@@ -1,0 +1,4 @@
+$('#contact').modal('hide');
+$('#flashnotice').html('<div class="notice col-md-offset-3"><h3><%= flash[:notice] %></h3></div>').delay(500).fadeIn('normal', function() {
+      $(this).delay(2500).fadeOut();
+   });
