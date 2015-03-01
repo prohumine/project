@@ -34,6 +34,7 @@ gem "letter_opener", :group => :development
 # gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 
+gem 'rails_12factor', group: :production
 # Use unicorn as the app server
 # gem 'unicorn'
 
