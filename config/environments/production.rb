@@ -52,6 +52,7 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+  config.action_mailer.default_url_options = { host: 'limitless-mesa-1245.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
   # config.action_mailer.smtp_settings = {
