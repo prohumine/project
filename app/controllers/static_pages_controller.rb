@@ -5,9 +5,9 @@ class StaticPagesController < ApplicationController
 
     def download_resume 
   	send_file(
-  		"#{Rails.root}/public/marvins.gdoc",
-  		filename: "MarvinSantizoresume.gdoc",
-  		type: "application/gdoc"
+  		"#{Rails.root}/public/marvinsres.pdf",
+  		filename: "MarvinSantizoresume.pdf",
+  		type: "application/pdf"
   	)
   end
 end
